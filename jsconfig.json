@@ -1,0 +1,9 @@
+// alias for src folder to ~
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"]
+		}
+	}
+}
