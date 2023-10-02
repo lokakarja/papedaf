@@ -17,6 +17,7 @@ import UpdatePegawaiPage from './dasbor/basis-data/pegawai/update'
 import PenugasanPage from './dasbor/penugasan'
 import CreatePenugasanPage from './dasbor/penugasan/create'
 import UpdatePenugasanPage from './dasbor/penugasan/update'
+import ReadPenugasanPage from './dasbor/penugasan/read'
 
 const router = createBrowserRouter([
 	{
@@ -103,6 +104,10 @@ const router = createBrowserRouter([
 					{
 						path: 'update/:id',
 						element: <UpdatePenugasanPage />,
+					},
+					{
+						path: 'read/:id',
+						element: <ReadPenugasanPage />,
 					},
 				],
 			},

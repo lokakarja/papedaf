@@ -18,17 +18,17 @@ export default function CreatePenugasanPage() {
 	const [tglBerangkat, setTglBerangkat] = useState('')
 	const [tglKembali, setTglKembali] = useState('')
 	const [bebanAnggaran, setBebanAnggaran] = useState('')
-	const [noSurat, setNoSurat] = useState('')
-	const [tempatSurat, setTempatSurat] = useState('')
-	const [tglSurat, setTglSurat] = useState('')
-	const [ttdSurat, setTtdSurat] = useState({
-		nama: '',
-		jabatan: '',
-		nip: '',
-		pangkat: '',
-	})
-	const [paraf, setParaf] = useState([])
-	const [parafItem, setParafItem] = useState({ nama: '', jabatan: '' })
+	// const [noSurat, setNoSurat] = useState('')
+	// const [tempatSurat, setTempatSurat] = useState('')
+	// const [tglSurat, setTglSurat] = useState('')
+	// const [ttdSurat, setTtdSurat] = useState({
+	// 	nama: '',
+	// 	jabatan: '',
+	// 	nip: '',
+	// 	pangkat: '',
+	// })
+	// const [paraf, setParaf] = useState([])
+	// const [parafItem, setParafItem] = useState({ nama: '', jabatan: '' })
 
 	function handleSubmit(event) {
 		event.preventDefault()
@@ -47,11 +47,11 @@ export default function CreatePenugasanPage() {
 				tglBerangkat,
 				tglKembali,
 				bebanAnggaran,
-				noSurat,
-				tempatSurat,
-				tglSurat,
-				ttdSurat,
-				paraf,
+				// noSurat,
+				// tempatSurat,
+				// tglSurat,
+				// ttdSurat,
+				// paraf,
 			})
 			.then((response) => {
 				alert(response.data.message)

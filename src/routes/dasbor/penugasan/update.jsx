@@ -21,17 +21,17 @@ export default function UpdatePenugasanPage() {
 	const [tglBerangkat, setTglBerangkat] = useState('')
 	const [tglKembali, setTglKembali] = useState('')
 	const [bebanAnggaran, setBebanAnggaran] = useState('')
-	const [noSurat, setNoSurat] = useState('')
-	const [tempatSurat, setTempatSurat] = useState('')
-	const [tglSurat, setTglSurat] = useState('')
-	const [ttdSurat, setTtdSurat] = useState({
-		nama: '',
-		jabatan: '',
-		nip: '',
-		pangkat: '',
-	})
-	const [paraf, setParaf] = useState([])
-	const [parafItem, setParafItem] = useState({ nama: '', jabatan: '' })
+	// const [noSurat, setNoSurat] = useState('')
+	// const [tempatSurat, setTempatSurat] = useState('')
+	// const [tglSurat, setTglSurat] = useState('')
+	// const [ttdSurat, setTtdSurat] = useState({
+	// 	nama: '',
+	// 	jabatan: '',
+	// 	nip: '',
+	// 	pangkat: '',
+	// })
+	// const [paraf, setParaf] = useState([])
+	// const [parafItem, setParafItem] = useState({ nama: '', jabatan: '' })
 
 	useEffect(() => {
 		axios
@@ -59,11 +59,11 @@ export default function UpdatePenugasanPage() {
 			setTglBerangkat(dayjs(penugasan.tglBerangkat).format('YYYY-MM-DD'))
 			setTglKembali(dayjs(penugasan.tglKembali).format('YYYY-MM-DD'))
 			setBebanAnggaran(penugasan.bebanAnggaran)
-			setNoSurat(penugasan.noSurat)
-			setTempatSurat(penugasan.tempatSurat)
-			setTglSurat(dayjs(penugasan.tglSurat).format('YYYY-MM-DD'))
-			setTtdSurat(penugasan.ttdSurat)
-			setParaf(penugasan.paraf)
+			// setNoSurat(penugasan.noSurat)
+			// setTempatSurat(penugasan.tempatSurat)
+			// setTglSurat(dayjs(penugasan.tglSurat).format('YYYY-MM-DD'))
+			// setTtdSurat(penugasan.ttdSurat)
+			// setParaf(penugasan.paraf)
 		}
 	}, [penugasan])
 
@@ -84,11 +84,11 @@ export default function UpdatePenugasanPage() {
 				tglBerangkat,
 				tglKembali,
 				bebanAnggaran,
-				noSurat,
-				tempatSurat,
-				tglSurat,
-				ttdSurat,
-				paraf,
+				// noSurat,
+				// tempatSurat,
+				// tglSurat,
+				// ttdSurat,
+				// paraf,
 			})
 			.then((response) => {
 				alert(response.data.message)
@@ -204,7 +204,7 @@ export default function UpdatePenugasanPage() {
 					</select>
 					<br />
 					<br />
-					<fieldset>
+					{/* <fieldset>
 						<legend>Surat Perintah Tugas (SPT)</legend>
 						<label htmlFor="noSurat">Nomor Surat</label>
 						<input
@@ -321,7 +321,7 @@ export default function UpdatePenugasanPage() {
 								Tambah Paraf
 							</button>
 						</fieldset>
-					</fieldset>
+					</fieldset> */}
 					<br />
 					<br />
 					<button type="submit">Update</button>

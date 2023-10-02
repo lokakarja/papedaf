@@ -89,7 +89,7 @@ export default function PenugasanPage() {
 								<td>{dayjs(penugasan.tglSurat).format('YYYY-MM-DD')}</td>
 								<td>{penugasan.judul}</td>
 								<td>
-									<Link to={'detail/' + penugasan._id}>Detail</Link>{' '}
+									<Link to={'read/' + penugasan._id}>Read</Link>{' '}
 									<Link to={'update/' + penugasan._id}>Update</Link>{' '}
 									<button onClick={() => handleDelete(penugasan._id)}>
 										Hapus
